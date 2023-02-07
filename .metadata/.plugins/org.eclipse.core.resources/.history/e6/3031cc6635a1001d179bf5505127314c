@@ -1,0 +1,30 @@
+package com.java.collectionsf;
+
+public class Queue1 {
+
+	public static void main(String[] args) {
+		Queue Q1=new Queue();
+		Q1.AddQ(10);
+		Q1.AddQ(20);
+		Q1.AddQ(05);
+		Q1.AddQ(56);
+		
+		Q1.show();
+		
+		System.out.println("Deleted Data:  ");
+	System.out.println(Q1.Dqueue());
+		System.out.println(Q1.Dqueue());
+		Q1.Dqueue();
+		Q1.Dqueue();
+	Q1.AddQ(10);
+//Q1.AddQ(20);
+//		Q1.AddQ(30);
+//		Q1.AddQ(40);
+		Q1.show();
+		
+//		System.out.println("Size  :"+Q1.GetSize());
+//		System.out.println("is Empty  :"+Q1.isEmpty());
+//		System.out.println("is Full  :"+Q1.isFull());
+	}
+
+}

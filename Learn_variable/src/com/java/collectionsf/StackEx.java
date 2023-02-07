@@ -1,0 +1,43 @@
+package com.java.collectionsf;
+
+import java.util.Iterator;
+import java.util.Stack;
+
+public class StackEx {
+
+	public static void main(String[] args) {
+		Stack stk=new Stack();
+		stk.push("teena");
+		stk.push("Neena");
+		stk.push("Leena");
+		stk.push("Beena");
+		stk.push("Seena");
+		stk.push("jeena");
+		
+		System.out.println(stk);
+		
+		System.out.println(stk.isEmpty());
+		
+		//System.out.println(stk.removeAll(stk));
+		stk.pop();
+		System.out.println(stk.isEmpty());
+		System.out.println(stk);
+		int n=stk.size();
+		System.out.println(n);
+		
+		Iterator i1=stk.iterator();
+		while(i1.hasNext()) {
+			
+			System.out.println(i1.next());
+			
+		}
+		
+		stk.forEach(n1->{
+		
+		System.out.println(n1);
+				
+		});
+		
+	}
+
+}

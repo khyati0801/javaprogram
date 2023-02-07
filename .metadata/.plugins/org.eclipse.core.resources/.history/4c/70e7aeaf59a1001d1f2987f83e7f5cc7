@@ -1,0 +1,19 @@
+package java8Lamda;
+@FunctionalInterface
+interface Lamda{
+	
+	public void m1();
+	default void m2() {}
+	static void m3() {}
+}
+
+
+public class Lamdaex1 {
+
+	public static void main(String[] args) {
+		Lamda l1=()-> System.out.println("hi");
+		l1.m1();
+
+	}
+
+}

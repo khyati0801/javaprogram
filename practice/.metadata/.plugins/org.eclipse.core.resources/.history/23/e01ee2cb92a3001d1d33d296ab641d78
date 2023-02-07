@@ -1,0 +1,27 @@
+package com.rivet.collectionP;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+
+
+public class ArrayListcomcoparator {
+
+	public static void main(String[] args) {
+ArrayList<String> Al=new ArrayList<String>();
+		
+		Al.add("pen");
+		Al.add("eraser");
+		Al.add("ballpen");
+		Al.add("sharpner");
+		Al.add("scale");
+System.out.println(Al);
+
+Collections.sort(Al);
+
+System.out.println(Al);
+	}
+
+
+}

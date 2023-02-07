@@ -1,0 +1,17 @@
+package fileio;
+
+import java.io.File;
+import java.io.Reader;
+
+public class FileReader1 {
+
+	
+
+	public static void main(String[] args) {
+		File f=new File("nitya.txt");
+		char[] c=new char[(int)f.length()];
+		FileReader fr=new FileReader(f);
+		
+	}
+
+}

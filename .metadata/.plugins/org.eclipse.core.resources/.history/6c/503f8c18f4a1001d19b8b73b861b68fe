@@ -1,0 +1,25 @@
+package java8Lamda;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+public class LamdaCollection {
+
+	public static void main(String[] args) {
+ ArrayList<String> Al=new ArrayList<String>();
+		
+		Al.add("pen");
+		Al.add("eraser");
+		Al.add("ballpen");
+		Al.add("sharpner");
+		Al.add("scale");
+		
+		System.out.println(Al);
+		
+		Comparator<String> c=(I1,I2)-> I1.compareTo(I2);
+		Collections.sort(Al,c);
+		System.out.println(Al);
+	}
+
+}

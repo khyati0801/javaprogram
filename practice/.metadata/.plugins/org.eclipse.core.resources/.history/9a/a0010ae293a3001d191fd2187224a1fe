@@ -1,0 +1,53 @@
+package com.rivet.collectionP;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Iterator;
+
+
+class employee{
+	private String Name;
+	private long id;
+	private int salary;
+	
+	employee(String Name,int salary,long id){
+		
+		this.Name=Name;
+		this.id=id;
+		this.salary=salary;
+	}
+	
+	@Override
+	public String toString() {
+		return "{" + Name +"," +id+","+salary+ "}";
+			
+	}
+	
+}
+
+public class ArrayListcomcoparator{
+
+	public static void main(String[] args) {
+		Collection<employee> ob=new ArrayList<employee>();
+		Collection<employee> ob1=new ArrayList<employee>();
+		ob.add(new employee("Nitya", 01, 10000));
+		ob.add(new employee("jatin", 02, 11000));
+		
+		
+		
+		ob1.add(new employee("Nitya1", 01, 10000));
+		ob1.add(new employee("jatin1", 02, 11000));
+		
+		ob1.addAll(ob);
+		Iterator i=ob1.iterator();
+		
+		
+		
+		while(i.hasNext()) {
+				System.out.print(i.next());
+		}
+
+		
+	}}

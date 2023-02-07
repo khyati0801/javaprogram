@@ -1,0 +1,17 @@
+package java8Lamda;
+interface Lamda{
+	
+	public void m1();
+	default void m2() {}
+	static void m3() {}
+}
+
+
+public class Lamdaex1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

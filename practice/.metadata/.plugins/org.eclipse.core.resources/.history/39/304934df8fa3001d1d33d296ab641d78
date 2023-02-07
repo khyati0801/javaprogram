@@ -1,0 +1,46 @@
+package com.rivet.collectionP;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class HasmapSorting {
+	
+
+	public static void main(String[] args) {
+		HashMap<Integer,String> map=new HashMap<Integer,String>();
+		
+		map.put(22, "gracy");
+		map.put(258, "bijal");
+		map.put(256, "ronak");
+		map.put(25,"darshti");
+		
+		
+	
+		Set<Map.Entry<Integer,String>> v=map.entrySet();
+		
+		for(Map.Entry<Integer,String> e:v) {
+			
+			System.out.println(e.getKey()+""+e.getValue());
+			
+		}
+		
+		TreeMap<Integer,String> Tm=new TreeMap<Integer,String>(map);
+		
+		Iterator i=Tm.keySet().iterator();
+		
+		while(i.hasNext()) {
+			int key=(int)i.next();
+			
+			
+			System.out.println(key+""+map.get(key));
+			
+		}
+		
+
+	}
+
+}

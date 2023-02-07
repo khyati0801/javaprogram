@@ -1,0 +1,19 @@
+package com.java.ConcurrentMap;
+
+import java.util.concurrent.CopyOnWriteArrayList;
+
+public class CopyOnWriteArrayList1 {
+
+	public static void main(String[] args) {
+		CopyOnWriteArrayList l1=new CopyOnWriteArrayList();
+		l1.add(456);
+		l1.add(456);
+		l1.addIfAbsent(456);
+		l1.add(789);
+		l1.addIfAbsent(456);
+		
+		System.out.println(l1);
+		
+	}
+
+}

@@ -1,0 +1,39 @@
+package com.java.ConcurrentMap;
+
+
+import java.util.Iterator;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+
+public class ConCurHasMap1 extends Thread {
+	static ConcurrentHashMap conhm=new ConcurrentHashMap();
+	public void run() {
+		try {
+			
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {System.out.println("child thread");
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		conhm.put(1004, "Raxil");
+	}
+	public static void main(String[] args) {
+		conhm.put(1001, "Binal");
+		conhm.put(1002, "Anjali");
+		conhm.put(1003, "jignal");
+		conhm.put(1004, "Raxil");
+		
+		ConCurHasMap1 t1=new ConCurHasMap1();
+		t1.start();
+		
+		Set s=conhm.keySet();
+		Iterator i=s.iterator();
+		while(i.hasNext()) {
+			
+			System.out.println(i.next());
+			
+		}
+
+	}
+
+}

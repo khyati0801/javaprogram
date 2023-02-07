@@ -1,0 +1,12 @@
+package khyati.string;
+
+public class StringFinal {
+
+	public static void main(String[] args) {
+		StringBuffer s1=new StringBuffer("Khyati");
+		StringBuilder s1=new StringBuilder("Khyati");
+		System.out.println(s1.equals(s1));;
+
+	}
+
+}

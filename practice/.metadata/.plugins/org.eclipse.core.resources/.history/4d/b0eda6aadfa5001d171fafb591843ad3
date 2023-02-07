@@ -1,0 +1,10 @@
+package com.rivet.collectionP;
+
+public class SynchonizedArrylist {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

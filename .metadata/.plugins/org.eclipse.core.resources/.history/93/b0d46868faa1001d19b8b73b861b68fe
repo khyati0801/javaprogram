@@ -1,0 +1,49 @@
+package java8Lamda;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+class Student{
+	int id;
+	String Name;
+	Student(int id,String Name){
+		
+		this.id=id;
+		this.Name=Name;
+		
+	}
+	public String toString() {
+		
+		return id+"  "+Name;
+	}
+	public Object compareTo(Student i2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+	
+}
+
+public class LamdaAnn {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Student> Al=new ArrayList<Student>();
+		Al.add(new Student(01,"khyati"));
+		Al.add(new Student(03,"nikita"));
+		Al.add(new Student(02,"Bhavika"));
+		Al.add(new Student(04,"Shital"));
+		
+		System.out.println(Al);
+		
+		//Comparator<Student> c=(I1,I2)-> (I1.id<I2.id)?-1:(I1.id>I2.id)?+1:0;
+		Comparator<Student> c=(I1,I2)-> I1.Name.compareTo(I2.Name);
+		
+		Collections.sort(Al,c);
+		System.out.println(Al);
+	}
+
+}

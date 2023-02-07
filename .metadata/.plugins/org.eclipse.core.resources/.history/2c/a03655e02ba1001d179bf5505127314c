@@ -1,0 +1,32 @@
+package com.java.collectionsf;
+
+public class Queue {
+	
+	int Q[]=new int[5];
+	int f;
+	int r;
+	int Size=0;
+	
+	
+	public void AddQ(int data)
+	{
+		Q[r]=data;
+		r=r++;
+		Size=Size++;
+		
+		
+	}
+	
+	public void show() {
+		System.out.println("Queue Data:  ");
+		for(int j=0;j<Size;j++) {
+			
+			System.out.print(Q[j]);
+			
+		}
+		
+	}
+	
+	
+
+}

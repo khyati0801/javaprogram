@@ -1,0 +1,20 @@
+package com.java.ConcurrentMap;
+
+import java.util.Iterator;
+import java.util.concurrent.ConcurrentHashMap;
+
+public class CunCurrentHasMap {
+
+	public static void main(String[] args) {
+		ConcurrentHashMap conhm=new ConcurrentHashMap();
+		
+		conhm.put(1001, "Binal");
+		conhm.put(002, "Anjali");
+		conhm.put(003, "jignal");
+		conhm.put(004, "Raxil");
+		
+		System.out.println(conhm);
+
+	}
+
+}

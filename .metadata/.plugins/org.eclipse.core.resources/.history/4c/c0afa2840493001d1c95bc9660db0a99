@@ -1,0 +1,5 @@
+package com.Khyati.FactoPP;
+
+public abstract class Plan {
+
+}

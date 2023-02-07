@@ -1,0 +1,24 @@
+package java8Lamda;
+class Student{
+	int id;
+	String Name;
+	Student(int id,String Name){
+		
+		this.id=id;
+		this.Name=Name;
+		
+	}
+	
+	
+	
+}
+
+public class LamdaAnn {
+
+	public static void main(String[] args) {
+		
+		Student ob=new Student(01,"khyati");
+		System.out.print(ob);
+	}
+
+}

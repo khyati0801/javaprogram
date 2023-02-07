@@ -1,0 +1,12 @@
+package khyati.string;
+
+public class StringFinal {
+
+	public static void main(String[] args) {
+		String s1="Khyati";
+		String s2=new String("khyati");
+		System.out.println(s1.equals(s2));;
+
+	}
+
+}

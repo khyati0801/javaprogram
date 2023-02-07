@@ -1,0 +1,23 @@
+package khyati.string;
+
+public class StringFinal {
+
+	public static void main(String[] args) {
+		StringBuffer s1=new StringBuffer("Khyati");
+		StringBuilder s2=new StringBuilder("Khyati");
+		StringBuilder s3=new StringBuilder("Khyati");
+		//StringBuffer s2=new StringBuffer("Khyati");
+		if(s1.equals(s2)) {
+			System.out.print(true);
+			
+			
+		}
+		else {
+			
+			System.out.print(false);
+			
+		}
+
+	}
+
+}

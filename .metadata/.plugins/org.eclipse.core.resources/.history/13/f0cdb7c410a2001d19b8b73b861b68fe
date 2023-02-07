@@ -1,0 +1,18 @@
+package java8Lamda;
+interface Inter{
+	default void max() {
+		
+		System.out.println("hi");
+		
+	}
+	
+}
+
+public class DefaultMethodI {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

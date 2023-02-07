@@ -1,0 +1,17 @@
+package fileio;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileWriterdemo {
+
+	public static void main(String[] args) throws IOException {
+		FileWriter fw=new FileWriter("nitya.txt");
+		fw.write(97);
+		fw.write("khyati");
+		fw.flush();
+		fw.close();
+		
+	}
+
+}

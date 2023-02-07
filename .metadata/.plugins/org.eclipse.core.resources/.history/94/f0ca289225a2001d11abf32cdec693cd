@@ -1,0 +1,30 @@
+package com.java.collectionsf;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class SortReverse {
+
+	public static void main(String[] args) {
+ArrayList<String> Al=new ArrayList<String>();
+//System.out.println(Al.ensureCapacity(0));
+System.out.println(Al.ensureCapacity(0));
+
+		Al.add("pen");
+		Al.add("eraser");
+		Al.add("ballpen");
+		Al.add("sharpner");
+		Al.add("scale");
+		
+		//sort
+		Collections.sort(Al);
+		System.out.println(Al);
+		
+		//Reverse
+		//Collections.reverse(Al);
+
+		Collections.sort(Al, Collections.reverseOrder()); 
+		System.out.println(Al);
+	}
+
+}

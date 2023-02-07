@@ -1,0 +1,14 @@
+package practice;
+
+public class StirngRev {
+
+	public static void main(String[] args) {
+		String Str="hi hello how are you";
+		int n=Str.length();
+		for(int i=n;i>n;i--) {
+			
+			System.out.print(Str.charAt(i));
+		}
+	}
+
+}

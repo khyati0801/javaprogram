@@ -1,0 +1,15 @@
+package practice;
+
+public class StirngRev {
+
+	public static void main(String[] args) {
+		String Str="hi hello how are you";
+		int n=Str.length();
+		System.out.println(n);
+		for(int i=n;i>Str.length()-1;i--) {
+			
+			System.out.print(Str.charAt(i));
+		}
+	}
+
+}

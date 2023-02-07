@@ -1,0 +1,16 @@
+package com.Khyati.FactoPP;
+
+public class GenerateBill {
+
+	public static void main(String[] args) {
+	
+		GetFactoryPlan g1=new GetFactoryPlan();
+		
+		
+		Plan p1=g1.GetPlan("Domestic");
+		p1.getRate();
+		p1.CalculateBill(200);
+
+	}
+
+}
